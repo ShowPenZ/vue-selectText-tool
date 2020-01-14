@@ -1,9 +1,9 @@
 {
-  "name": "vue-selectText-tool",
+  "name": "vue-select-tool",
   "version": "1.0.0",
   "author": "ShowPenZ <pengxiaoz1012@gmail.com> (https://ShowPenZ.github.io/)",
   "main": "dist/SelectTextTool.min.js",
-  "description": "a ripple-effect component for Vue",
+  "description": "a text select tool component for Vue",
   "homepage": "https://github.com/ShowPenZ/vue-selectText-tool",
   "scripts": {
     "build": "bili",

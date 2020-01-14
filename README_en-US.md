@@ -1,8 +1,8 @@
-[English](https://github.com/ShowPenZ/vue-selectText-tool/blob/master/README_en-US.md) | 中文
+English | [中文](./README.md)
 
 # vue-selectText-tool
 
-> 一个vue的选择文字组件
+> A text select tool component for vue
 
 ## Installation
 
@@ -12,7 +12,7 @@ $ yarn add vue-selectText-tool
 ```
 
 ## Usage
-用法1 仅针对当前插入的SelectText dom
+Method 1  Only for the currently inserted selecttext DOM
 
 ``` vue
 <script>
@@ -25,22 +25,22 @@ import TextTool from "vue-selectText-tool";
    },
    methods: {},
    render() {
-     //这个回调拿到相应被选择的信息 
-     //txt: 选择的文本, target: 被选择的dom对象, num: 选择的文本字数
+     //This callback gets the corresponding selected information 
+     //txt: Selected text, target: The DOM object selected, num: Number of text words selected
      const handler = (txt, target, num) => {
        console.log(txt, target, num);
      };
 
      return (
        <TextTool.SelectTextTool handler={handler}>
-         这是一个测试 文本!
+         This is a test text!
        </TextTool.SelectTextTool>
      );
    }
 };
 
 ```
-用法2 挂载方法到当前整个页面
+Method 2  Mount method to the current entire page
 
 ``` vue
 import TextTool from "vue-selectText-tool";
@@ -57,13 +57,13 @@ export default {
   },
   methods: {
     handler(txt, target, num) {
-      //这个回调拿到相应被选择的信息 
-      //txt: 选择的文本, target: 被选择的dom对象, num: 选择的文本字数
+      //This callback gets the corresponding selected information 
+      //txt: Selected text, target: The DOM object selected, num: Number of text words selected
       console.log(txt, target, num);
     }
   },
   render() {
-    return <div>这是一个测试 文本!</div>;
+    return <div>This is a test text!</div>;
   }
 };
 </script>
@@ -74,3 +74,4 @@ export default {
 # License
 
 MIT
+
